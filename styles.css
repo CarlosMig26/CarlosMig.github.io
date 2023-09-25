@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    margin: 20px;
+}
+
+.table th {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    width: 100px;
+}
+
+.table td {
+    text-align: center;
+    width: 100px;
+}
+td.materia:hover,th:hover{
+    animation: azulIris 4s linear infinite;
+    scale: 1.1;
+    transition: 0.5s;
+}
+td.vacio:hover{
+    animation: arcoiris 5s linear infinite;
+    scale: 1.1;
+    transition: 0.5s;
+} 
+.materia {
+    background-color: #2980b9;
+    color: #fff;
+}
+
+.descanso {
+    background-color: #85c1e9;
+}
+.vacio {
+    animation: arcoiris 5s linear infinite; 
+}
+
+@keyframes arcoiris {
+    0% {
+        background-color: red;
+    }
+    14% {
+        background-color: orange;
+    }
+    28% {
+        background-color: yellow;
+    }
+    42% {
+        background-color: green;
+    }
+    57% {
+        background-color: blue;
+    }
+    71% {
+        background-color: indigo;
+    }
+    85% {
+        background-color: violet;
+    }
+    100% {
+        background-color: red;
+    }
+}
+
+@keyframes azulIris {
+    0% {
+        background-color: #3498db;
+    }
+    33% {
+        background-color: #5dade2;
+    }
+    66% {
+        background-color: #85c1e9;
+    }
+    100% {
+        background-color: #2980b9;
+    }
+
+}
